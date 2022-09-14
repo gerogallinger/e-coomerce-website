@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { HttpClientModule } from '@angular/common/http';
 //Rutas
 import { AppRoutingModule } from './app-routing.module';
 
@@ -11,6 +11,7 @@ import { FooterComponent } from './shared/footer/footer.component';
 import { BodyComponent } from './pages/body/body.component';
 import { AboutComponent } from './pages/about/about.component';
 import { ItemComponent } from './pages/item/item.component';
+import { SearchComponent } from './pages/search/search.component';
 
 @NgModule({
   declarations: [
@@ -20,8 +21,9 @@ import { ItemComponent } from './pages/item/item.component';
     BodyComponent,
     AboutComponent,
     ItemComponent,
+    SearchComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent],
 })
